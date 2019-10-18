@@ -24,7 +24,7 @@
 // }
 
 
-
+// Algorithm 2
 // Showing odd for odd numbers, even for even number and invalid for numbers that contain decimal fractions
 
 function check ()
@@ -38,3 +38,8 @@ function check ()
     document.getElementById("numberResult").innerHTML = a + '  is an ODD number';
   }
 }
+
+// Algorithm 3
+// Storing a sentence in a variable
+
+var givenSentence = document.querySelectorAll('givenSentence');
