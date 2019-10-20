@@ -41,3 +41,11 @@ function check ()
 
 // Algorithm 3
 // Storing a sentence in a variable
+
+console.log("learning replace")
+
+function myFunction() {
+  var givenSentence = document.getElementById("demo").innerHTML;
+  var replacedSentence = givenSentence.replace("mistakes","bugs");
+  document.getElementById("demo").innerHTML = replacedSentence;
+}
