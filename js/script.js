@@ -41,5 +41,3 @@ function check ()
 
 // Algorithm 3
 // Storing a sentence in a variable
-
-var givenSentence = document.querySelectorAll('givenSentence');
