@@ -93,3 +93,40 @@ document.getElementById('delete').addEventListener('click', function(){
     }
   }
 });
+
+// //search
+// document.getElementById('search').addEventListener('click', function(){
+//   document.getElementById('result').innerHTML = " ";
+//
+//   var fruits = ["APPLE", "ORANGE", "KIWI"];
+//
+//   var userFruit = (document.getElementById('fruit').value).toUpperCase();
+//   console.log(userFruit);
+//
+//   for (var i=0; i<fruits.length; i++){
+//
+//     if (fruits[i] === userFruit){
+//
+//       document.getElementById('result').innerHTML += '</br> </br> ' + userFruit + ' is found in the array.' + fruits;
+//       break;
+//     }
+//
+//
+//   }
+//    if (fruits.includes(userFruit) === false) {
+//     document.getElementById('result').innerHTML += '</br> </br> ' + userFruit + ' is not found in the array.' + fruits;
+//    }
+//    document.getElementById('fruit').value = " ";
+// });
+//
+// //Sort
+// document.getElementById('sort').addEventListener('click', function(){
+//   document.getElementById('result').innerHTML = " ";
+//   document.getElementById('fruit').value = " ";
+//   var fruits = ["APPLE", "ORANGE", "KIWI"];
+//
+//     fruits.sort();
+//     fruits.reverse();
+//     document.getElementById('result').innerHTML += '</br> </br> The sorted array is : ' + fruits;
+//     document.getElementById('fruit').value = " ";
+// });
