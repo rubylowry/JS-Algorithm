@@ -46,6 +46,6 @@ console.log("learning replace")
 
 function myFunction() {
   var givenSentence = document.getElementById("demo").innerHTML;
-  var replacedSentence = givenSentence.replace("mistakes","bugs");
+  var replacedSentence = givenSentence.replace(/mistakes/g,"bugs");
   document.getElementById("demo").innerHTML = replacedSentence;
 }
