@@ -1,4 +1,4 @@
-// console.log("js algorithm");
+console.log("js algorithm");
 //
 // // Make your variables have no value
 // var givenString = 0;
@@ -40,12 +40,56 @@ function check ()
 }
 
 // Algorithm 3
-// Storing a sentence in a variable
-
-console.log("learning replace")
+// Storing a sentence in a variable and replacing the word "mistakes" with "bugs"
 
 function myFunction() {
   var givenSentence = document.getElementById("demo").innerHTML;
   var replacedSentence = givenSentence.replace(/mistakes/g,"bugs");
+
   document.getElementById("demo").innerHTML = replacedSentence;
 }
+
+// Algorithm 4
+// Create 4 buttons for add to, delete from, search in and sort an array.
+// add to arrays
+
+document.getElementById('add').addEventListener('click', function(){
+  document.getElementById('result').innerHTML = " ";
+
+  var food = ["brie","croutons","almonds"];
+  var platter = ["cheese", "cashews", "ham", "apple", "grapes", "chips", "salami"]
+  var userPlatter = (document.getElementById('platter').value).toUpperCase();
+
+  if (food.includes(userPlatter) === true)   {
+
+    if (platter.includes(userPlatter) === false) {
+
+    food.push(userPlatter);
+    document.getElementById('result').innerHTML = '</br> </br> Your food is added. The new array is ' + food;
+  } else {
+    document.getElementById('result').innerHTML = '</br> </br> The food you entered is not in the platter';
+}
+  } else {
+    document.getElementById('result').innerHTML = '</br> </br> The food you entered exists already. Please give another food';
+  }
+document.getElementById('result').value = " ";
+});
+
+
+// delete from arrays
+
+document.getElementById('delete').addEventListener('click', function(){
+  document.getElementById('platter').innerHTML = " ";
+
+  var food = ["brie", "croutons", "almonds"];
+  var platter = ["cheese", "cashews", "ham", "apple", "grapes", "chips", "salami"]
+  var userPlatter = (document.getElementById('platter').value).toUpperCase();
+  console.log(userPlatter);
+
+  for (var i = 0; i< food.length; i++){
+     if (food[i] === userPlatter){
+      delete food[i];
+      document.getElementById('result').innerHTML = '</br> </br> The new array is ' + food;
+    }
+  }
+});
